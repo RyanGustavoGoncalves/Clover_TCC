@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+body{
+  background-color: black;
+}
+.imgFundo{
+  background-image: url(assets/Programing.png);
+  filter:opacity(0.5); /* Ajuste o valor do desfoque conforme desejado */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+}
+.meucomponente{
+  position: relative;
+}
+main{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 100px;
+  padding-inline: 20px;
+}
+header>nav{
+  display: flex;
+}
+header>nav>ul{
+  display: flex;
+  gap: 160px;
+}
+header>nav>ul>li{
+  list-style: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+main>article{
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    align-items: center;
+    flex-direction: column;
+}
+main>article>section{
+  text-align: center;
+}
+main>article>section>h2{
+  font-size: 35px;
+}
+main>article>section>span{
+  font-weight: bold;
+}
+main>article>div.btn{
+  padding: 20px;
+}main>article>div.btn>button{
+  padding: 8px;
+  padding-inline: 20px;
+  margin: 5px;
+  border-radius: 6px;
+  border: none;
+}
+main>article>div.btn>.button1{
+  background-color: #00d700;
+  color: white;
+  text-shadow: 1px 0px 3px black;
+}
+main>article>div.btn>.button2{
+  background-color: white;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
